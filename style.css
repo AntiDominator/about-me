@@ -1,97 +1,91 @@
 /* General Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  transition: background-color 0.5s ease;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 50px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 30px;
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-#contact-info, #social-links, #project-helpers {
-  margin-top: 40px;
-}
-
-#contact-info p, #social-links h2, #project-helpers h2 {
-  margin-bottom: 10px;
-}
-
-#social-links ul, #project-helpers ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#social-links li, #project-helpers li {
-  margin-bottom: 10px;
-}
-
-#social-links a, #project-helpers a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-#social-links a:hover, #project-helpers a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-/* Hover Animation for Social Links */
-#social-links li:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-/* Fade-In Animation for Sections */
-@keyframes slideInFromLeft {
-  from { transform: translateX(-100%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-#contact-info, #social-links, #project-helpers {
-  animation: slideInFromLeft 1s ease-in-out forwards;
-}
-
-/* Responsive Media Queries */
-@media (max-width: 768px) {
-.container {
-      padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.5s ease;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #contact-info, #social-links, #project-helpers,#original-author {
+    margin-top: 40px;
+  } 
+  
+  #contact-info p, #social-links h2, #project-helpers h2,#original-author h2 {
+    margin-bottom: 10px;
+  }
+  
+  #social-links ul, #project-helpers ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #social-links li, #project-helpers li {
+    margin-bottom: 10px;
+  }
+  
+  #social-links a, #project-helpers a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #social-links a:hover, #project-helpers a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Hover Animation for Social Links */
+  #social-links li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Fade-In Animation for Sections */
+  @keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  #contact-info, #social-links, #project-helpers,#original-author {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+  .container {
+        padding: 20px;
+    }
+  
+    header, #project-helpers h2 {
+        font-size: 24px;
+    }
+  
+    #contact-info p, #social-links h2, #project-helpers h2,#original-author h2 {
+        font-size: 16px;
+    }
   }
 
-  header, #project-helpers h2 {
-      font-size: 24px;
-  }
 
-  #contact-info p, #social-links h2, #project-helpers h2 {
-      font-size: 16px;
-  }
-}
-#original-author {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-}
 
-#original-author h2 {
-    color: #333;
-}
 
